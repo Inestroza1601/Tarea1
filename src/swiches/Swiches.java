@@ -10,9 +10,7 @@ public class Swiches {
         System.out.println("1.- Pupusas");
         System.out.println("2.- Baleadas");
         System.out.println("3.- Pollo");
-
         op = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese la opcion"));
-
         switch (op) {
             case 1:
                 System.out.println("Producto agregado");
@@ -77,12 +75,12 @@ public class Swiches {
                 if ("Si".equals(opci0)) {
                     System.out.println("Bebida agregada");
                     System.out.println("Pedido: ");
-                    System.out.println("1.Baleadas");
+                    System.out.println("1.Pupusas");
                     System.out.println("2.Bebdia: Si");
                 } else {
                     System.out.println("Pedido completo");
                     System.out.println("Pedido: ");
-                    System.out.println("1.Baleadas");
+                    System.out.println("1.Pupusas");
                     System.out.println("2.Bebdia: No");
                 }
                 break;
@@ -93,12 +91,12 @@ public class Swiches {
                 if ("Si".equals(opcii)) {
                     System.out.println("Bebida agregada");
                     System.out.println("Pedido: ");
-                    System.out.println("1.Baleadas");
+                    System.out.println("1.Pollo");
                     System.out.println("2.Bebdia: Si");
                 } else {
                     System.out.println("Pedido completo");
                     System.out.println("Pedido: ");
-                    System.out.println("1.Baleadas");
+                    System.out.println("1.Pollo");
                     System.out.println("2.Bebdia: No");
                 }
                 break;
@@ -107,7 +105,6 @@ public class Swiches {
 
                 break;
         }
-
     }
 
     public void calificaciones(){
@@ -118,50 +115,26 @@ public class Swiches {
 
         switch (letra)
         {
-            case "A":
-                JOptionPane.showMessageDialog(null, "Sobresaliente.");
-                break;
-            case "B":
-                JOptionPane.showMessageDialog(null, "Bueno.");
-                break;
-            case "C":
-                JOptionPane.showMessageDialog(null, "Regular.");
-                break;
-            case "D":
-                JOptionPane.showMessageDialog(null, "Deficiente.");
-                break;
-            case "E":
-                JOptionPane.showMessageDialog(null, "Insatisfactorio.");
-                break;
-            case "F":
-                JOptionPane.showMessageDialog(null, "Reprobado.");
-                break;
-            default:
-                JOptionPane.showMessageDialog(null, "Opcion no valida.");
+            case "A": JOptionPane.showMessageDialog(null, "Sobresaliente."); break;
+            case "B": JOptionPane.showMessageDialog(null, "Bueno.");break;
+            case "C": JOptionPane.showMessageDialog(null, "Regular.");break;
+            case "D": JOptionPane.showMessageDialog(null, "Deficiente.");break;
+            case "E": JOptionPane.showMessageDialog(null, "Insatisfactorio.");break;
+            case "F": JOptionPane.showMessageDialog(null, "Reprobado.");break;
+            default: JOptionPane.showMessageDialog(null, "Opcion no valida.");
         }
     }
 
     public void operacionesMatematicas(){
         float numero1 = Float.parseFloat(JOptionPane.showInputDialog("Ingrese el numero 1: "));
         float numero2 = Float.parseFloat(JOptionPane.showInputDialog("Ingrese el numero 2: "));
-
         int opcion = Integer.parseInt(JOptionPane.showInputDialog("Operaciones matematicas\n1.Suma\n2.Resta\n3.Multiplicacion\n4.Division\nOpcion:"));
-
         switch (opcion) {
-            case 1:
-                JOptionPane.showMessageDialog(null, "El resultado es " + (numero1 + numero2));
-                break;
-            case 2:
-                JOptionPane.showMessageDialog(null, "El resultado es " + (numero1 - numero2));
-                break;
-            case 3:
-                JOptionPane.showMessageDialog(null, "El resultado es " + (numero1 * numero2));
-                break;
-            case 4:
-                JOptionPane.showMessageDialog(null, "El resultado es " + (numero1 / numero2));
-                break;
-            default:
-                JOptionPane.showMessageDialog(null, "Opcion no valida.");
+            case 1: JOptionPane.showMessageDialog(null, "El resultado es " + (numero1 + numero2));break;
+            case 2: JOptionPane.showMessageDialog(null, "El resultado es " + (numero1 - numero2));break;
+            case 3: JOptionPane.showMessageDialog(null, "El resultado es " + (numero1 * numero2));break;
+            case 4: JOptionPane.showMessageDialog(null, "El resultado es " + (numero1 / numero2));break;
+            default: JOptionPane.showMessageDialog(null, "Opcion no valida.");
         }
     }
 
@@ -204,7 +177,6 @@ public class Swiches {
     public void esVocal() {
         String letra = JOptionPane.showInputDialog("Ingrese una letra:");
         letra = letra.toLowerCase();
-
         switch (letra) {
             case "a":
             case "e":
@@ -217,12 +189,10 @@ public class Swiches {
                 JOptionPane.showMessageDialog(null, "No es una vocal.");
         }
     }
-
     // 4. Colores primarios de la luz
     public void coloresPrimarios() {
         String color = JOptionPane.showInputDialog("Ingrese un color (Rojo, Verde, Azul):");
         color = color.toLowerCase();
-
         switch (color) {
             case "rojo": JOptionPane.showMessageDialog(null, "Es un color primario de la luz."); break;
             case "verde": JOptionPane.showMessageDialog(null, "Es un color primario de la luz."); break;
@@ -233,9 +203,7 @@ public class Swiches {
 
     // 5. Menú de mascotas
     public void menuMascotas() {
-        int op = Integer.parseInt(JOptionPane.showInputDialog(
-                "Menú de mascotas\n1. Perro\n2. Gato\n3. Conejo\nSeleccione opción:"));
-
+        int op = Integer.parseInt(JOptionPane.showInputDialog("Menú de mascotas\n1. Perro\n2. Gato\n3. Conejo\nSeleccione opción:"));
         switch (op) {
             case 1: JOptionPane.showMessageDialog(null, "Has adoptado un Perro."); break;
             case 2: JOptionPane.showMessageDialog(null, "Has adoptado un Gato."); break;
@@ -247,9 +215,7 @@ public class Swiches {
     // 6. Cajero automático
     public void cajeroAutomatico() {
         int saldo = 1000;
-        int op = Integer.parseInt(JOptionPane.showInputDialog(
-                "Cajero Automático\n1. Consultar saldo\n2. Depositar dinero\n3. Retirar dinero\n4. Salir\nOpción:"));
-
+        int op = Integer.parseInt(JOptionPane.showInputDialog("Cajero Automático\n1. Consultar saldo\n2. Depositar dinero\n3. Retirar dinero\n4. Salir\nOpción:"));
         switch (op) {
             case 1:
                 JOptionPane.showMessageDialog(null, "Su saldo es: $" + saldo);
