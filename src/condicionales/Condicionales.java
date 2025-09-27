@@ -2,6 +2,43 @@ package condicionales;
 import javax.swing.*;
 
 public class Condicionales {
+    public void ejercicio1(){
+        //Ejercicio 1
+        int num = Integer.parseInt(JOptionPane.showInputDialog("Ingresa un numero"));
+        if(num>10){
+            System.out.println("El numero es mayor a 10");
+        }
+    }
+
+    public void ejercicio2(){
+        //Ejercicio 2
+        int edad = Integer.parseInt(JOptionPane.showInputDialog("Ingresa su edad"));
+        if(edad>18){
+            System.out.println("Es mayor de edad");
+        }
+    }
+
+    public void ejercicio3(){
+        //Ejercicio 3
+        String nombre = JOptionPane.showInputDialog("Ingrese su nombre");
+        if(nombre.equals("Carlos")){
+            System.out.println("La palabra es correcta");
+        }
+    }
+
+    public void ejercicio4(){
+        //Considionales compuestas
+        int numero;
+        numero = Integer.parseInt(JOptionPane.showInputDialog("Ingresa el numero"));
+        if(numero>0){
+            System.out.println("El numero es positivo");
+        }else if(numero<0){
+            System.out.println("El numero es negativo");
+        }else {
+            System.out.println("El numero es 0");
+        }
+    }
+
     public void parImpar(){
         float numero;
         numero = Float.parseFloat(JOptionPane.showInputDialog("Ingrese el numero"));
